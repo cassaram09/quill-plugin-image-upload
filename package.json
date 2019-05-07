@@ -3,13 +3,14 @@
   "version": "0.0.6",
   "description": "a plugin for uploading image in Quill",
   "main": "./dist/index.js",
+  "module": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dragonwong/quill-plugin-image-upload.git"
+    "url": "git+https://github.com/cassaram09/quill-plugin-image-upload.git"
   },
   "keywords": [
     "quill",
@@ -21,9 +22,9 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dragonwong/quill-plugin-image-upload/issues"
+    "url": "https://github.com/cassaram09/quill-plugin-image-upload/issues"
   },
-  "homepage": "https://github.com/dragonwong/quill-plugin-image-upload#readme",
+  "homepage": "https://github.com/cassaram09/quill-plugin-image-upload#readme",
   "devDependencies": {
     "@babel/core": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
