@@ -21,7 +21,5 @@ module.exports = {
       }
     ]
   },
-  externals: {
-    quill: "quill"
-  }
+  externals: ["quill"]
 };
