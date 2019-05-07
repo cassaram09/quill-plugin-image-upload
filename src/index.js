@@ -76,4 +76,4 @@ class ImageUpload {
   }
 }
 
-module.exports = ImageUpload;
+export default ImageUpload;

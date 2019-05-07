@@ -20,5 +20,8 @@ module.exports = {
         }
       }
     ]
+  },
+  externals: {
+    quill: "quill"
   }
 };
