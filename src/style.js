@@ -1,12 +1,13 @@
-const constant = require('./constant');
+import constant from "./constant";
 
-const ANIMATION_NAME = 'quill-plugin-image-upload-spinner';
+const ANIMATION_NAME = "quill-plugin-image-upload-spinner";
 
-const styleElement = document.createElement('style');
-styleElement.type = 'text/css';
-document.getElementsByTagName('head')[0].appendChild(styleElement);
+const styleElement = document.createElement("style");
+styleElement.type = "text/css";
+document.getElementsByTagName("head")[0].appendChild(styleElement);
 
-styleElement.appendChild(document.createTextNode(`
+styleElement.appendChild(
+  document.createTextNode(`
   .${constant.IMAGE_UPLOAD_PLACEHOLDER_CLASS_NAME} {
     display: inline-block;
     width: 30px;
@@ -21,4 +22,5 @@ styleElement.appendChild(document.createTextNode(`
       transform: rotate(360deg);
     }
   }
-`));
+`)
+);

@@ -1,7 +1,7 @@
-const Quill = require('quill');
-const constant = require('./constant');
+import Quill from "quill";
+import constant from "./constant";
 
-const Image = Quill.import('formats/image');
+const Image = Quill.import("formats/image");
 
 class ImageUploadPlaceholder extends Image {
   static create(value) {
@@ -17,20 +17,22 @@ class ImageUploadPlaceholder extends Image {
     }
 
     let node = super.create(src);
-    if (typeof src === 'string') {
-      node.setAttribute('src', this.sanitize(src));
+    if (typeof src === "string") {
+      node.setAttribute("src", this.sanitize(src));
     }
 
     if (id) {
-      node.setAttribute('id', id);
+      node.setAttribute("id", id);
     }
     return node;
   }
 }
 
-ImageUploadPlaceholder.blotName = 'imageUpload';
+ImageUploadPlaceholder.blotName = "imageUpload";
 ImageUploadPlaceholder.className = constant.IMAGE_UPLOAD_PLACEHOLDER_CLASS_NAME;
 
 Quill.register({
-  'formats/imageUploadPlaceholder': ImageUploadPlaceholder
+  "formats/imageUploadPlaceholder": ImageUploadPlaceholder
 });
+
+export default ImageUploadPlaceholder;
